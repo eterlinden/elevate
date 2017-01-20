@@ -11,24 +11,27 @@
         "client",
         "HTTP client"
     ],
-    "homepage": "http://github.com/terliezr/elevate",
+    "homepage": "http://github.com/eterlinden/elevate",
     "license": "MIT",
     "authors": [
         {
             "name": "Ezra ter Linden",
-            "email": "oo-node@web.de"
+            "email": "ezra.ter.linden@web.de"
         }
     ],
     "require": {
         "php": ">=7.0",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "psr/log": "^1.0",
+        "vlucas/phpdotenv": "^2.4"
     },
     "require-dev": {
+        "sami/sami": "^4.0",
         "phpunit/phpunit": "^5.7"
     },
     "autoload": {
-        "files": [cl
-            "src/boostrap.php"
+        "files": [
+            "src/core/boostrap.php"
         ],
         "psr-4": {
             "Eterlinden\\Elevate\\": "src/"
